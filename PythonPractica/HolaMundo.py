@@ -5,3 +5,4 @@ print(x)
 var = 12-6
 
 print(var)
+print("Hola mundo")
