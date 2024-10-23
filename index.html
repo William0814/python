@@ -50,7 +50,7 @@ rem ducimus.
     </p><br>
     <!--esto esun comentario-->
     <hr>
-    <h1>enlaces a otro sitio web</h1>
+    <h1 border="2px">enlaces a otro sitio web</h1>
     <a href="https://www.gamesgx.net/" title="https://www.gamesgx.net/" target="_blank" id="titulo2">
         lleva otra pagina</a>
         <hr>
@@ -84,23 +84,146 @@ rem ducimus.
         <li>segundo elemento</li>
         <li>tercer elemento</li>
     </ol>
-
+    <hr>
+    <h1>Listas por definicion</h1>
     <br>
+    <dl>
+        <dt>
+            Coffe
+        </dt>
+        <dd>
+            Balck
+        </dd>
+        <dt>
+            Milk
+        </dt>
+        <dd>
+            White
+        </dd>
+    </dl>
     <hr>
+    <h2>Tablas</h2>
+    <table border="5px">
+        <caption>
+            tabla simple 3x3
+        </caption>
+        <tr>
+            <td ><a href="#titulo1" title="lleva al inicio">celda1</a></td>
+            <td colspan="2">celda2</td>
+            <td>celda3</td>
+            <td>celda4</td>
+        </tr>
+        <tr>
+            <td>celda3</td>
+            <td>celda4</td>
+            <td>celda5</td>
+            <td>celda6</td>
+        </tr>
+</table>
+<hr>
+     
+<table border="2">
 
+    <caption>tabla simple</caption>
+    <tr>
+    <td colspan="2">celda1</td>
+    <tr><td>celda2</td></tr>
+    <td>celda3</td>
+    <td>celda4</td>
+    <td>celda5</td>
+    <td>&nbsp;</td>
+    <th>ejemplo</th>
+</tr>
+<tr>
+    <th>otro ejemplo</th>
+    <td>celda9</td>
+    <th>celda10</th>
+</tr>
+<tr>
+    <th>
+        celda11
+    </th>
+</tr>
 
-
-
-
-
-
-
-
-
-
-
-
+</table>
+<table border="1">
+    <caption>Tabla con celdas unidas
+    mediante rowspan</caption>
+    <tr>
+    <th>&nbsp;</th> <!--Celda vacía-->
+    
+    <th>Básico</th>
+    <th>Completo</th>
+    </tr>
+    <tr>
+    <th>Instalación</th>
+    <td rowspan="3">Gratis!</td>
+    <td>$49.99</td>
+    </tr>
+    <tr>
+    <th>Primer año</th>
+    <td>$19.99</td>
+    </tr>
+    <tr>
+    <th>Segundo año</th>
+    <td>$9.99</td>
+    <td>$29.99</td>
+    </tr>
+    </table>
+    <h3>mas ejemplos de tabla</h3>
+    <table border="2">
+        <caption>Su pedido</caption>
+        <tr>
+            <th scope="col">Nombre Producto</th>
+            <th scope="col">Precio Unitario</th>
+            <th scope="col">Unidades</th>
+            <th scope="row">Subtotal</th>
+        </tr>
+        <tr>
+            <td>Laptop ASUS</td>
+            <td>2'300.000</td>
+            <td>3</td>
+            <td>6'900.000</td>
+        </tr>
+        <tr>
+            <td>Play 5</td>
+            <td>4'200.000</td>
+            <td>1</td>
+            <td>4'200.000</td>
+        </tr>
+        <tr>
+            <th scope="row">Total:</th>
+            <td>-</td>
+            <td>4</td>
+            <td>6'500.000</td>
+        </tr>
+    </table>
+<br>
+<br>
+    <table border="2">
+        <caption><b>Tabla del Clima</b></caption>
+        <tr>
+            <th scope="row">Dia</th>
+            <th>Hoy</th>
+            <th>Mañana</th>
+            <th>Pasado Mañana</th>
+        </tr>
+        <tr>
+            <th>Condicion</th>
+            <td>Soleado</td>
+            <td>Lluvia</td>
+            <td>Soleado</td>
+        </tr>
+        <tr>
+            <th>Temperatura</th>
+            <td>30°C</td>
+            <td>20°C</td>
+            <td>26°C</td>
+        </tr>
+    </table>
     <hr>
+    <h1 aria-current="page">Imagenes</h1>
+    <img src="imagenes/imgPrueba.png" alt="Image not found" title="Foto">
 
 </body>
 
