@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body><hr>
+<body>
+    <hr>
     <h1>esto es un parrafo</h1>
-    <pre id="parrafo1">
+    <p id="parrafo1">
         Lorem ipsum dolor
 sit amet consectetur adipisicing elit.
 Eveniet eos aliquid fugiat maiores iure
@@ -40,8 +41,8 @@ ab nam! Provident recusandae ipsam maxime
 rem ducimus.
 <hr>
 <h1><i><u>Tipos de letras</u></i></h1>
-    </pre>
-    
+    </p>
+
     <p><b>Negrita</b><br>
         <a href="" id=""></a>
         <i>cursiva</i> <u>Subrayado</u><br>
@@ -53,7 +54,7 @@ rem ducimus.
     <h1 border="2px">enlaces a otro sitio web</h1>
     <a href="https://www.gamesgx.net/" title="https://www.gamesgx.net/" target="_blank" id="titulo2">
         lleva otra pagina</a>
-        <hr>
+    <hr>
     <h1>Tipos de titulo</h1><br>
     <hgroup>
         <h1 id="titulo1">titulo1</h1>
@@ -71,7 +72,8 @@ rem ducimus.
     </pre>
     <a href="#parrafo1" title="lleva al lorem ipsum" target="_parent">
         enlace para otra pagina</a>
-    <ul style="list-style-type: circle;"> <h3>listas desordenadas</h3>
+    <ul style="list-style-type: circle;">
+        <h3>listas desordenadas</h3>
         <li style="list-style-position: outside;">primer elemento</li>
         <li><i>segundo elemento</i></li>
         <li><a href="#parrafo1">tercer elemento</a></li>
@@ -79,7 +81,8 @@ rem ducimus.
 
     </ul>
     <hr>
-    <ol> <h3>listas ordenadas</h3>
+    <ol>
+        <h3>listas ordenadas</h3>
         <li>primer elemento</li>
         <li>segundo elemento</li>
         <li>tercer elemento</li>
@@ -108,7 +111,7 @@ rem ducimus.
             tabla simple 3x3
         </caption>
         <tr>
-            <td ><a href="#titulo1" title="lleva al inicio">celda1</a></td>
+            <td><a href="#titulo1" title="lleva al inicio">celda1</a></td>
             <td colspan="2">celda2</td>
             <td>celda3</td>
             <td>celda4</td>
@@ -119,56 +122,58 @@ rem ducimus.
             <td>celda5</td>
             <td>celda6</td>
         </tr>
-</table>
-<hr>
-     
-<table border="2">
+    </table>
+    <hr>
 
-    <caption>tabla simple</caption>
-    <tr>
-    <td colspan="2">celda1</td>
-    <tr><td>celda2</td></tr>
-    <td>celda3</td>
-    <td>celda4</td>
-    <td>celda5</td>
-    <td>&nbsp;</td>
-    <th>ejemplo</th>
-</tr>
-<tr>
-    <th>otro ejemplo</th>
-    <td>celda9</td>
-    <th>celda10</th>
-</tr>
-<tr>
-    <th>
-        celda11
-    </th>
-</tr>
+    <table border="2">
 
-</table>
-<table border="1">
-    <caption>Tabla con celdas unidas
-    mediante rowspan</caption>
-    <tr>
-    <th>&nbsp;</th> <!--Celda vacía-->
-    
-    <th>Básico</th>
-    <th>Completo</th>
-    </tr>
-    <tr>
-    <th>Instalación</th>
-    <td rowspan="3">Gratis!</td>
-    <td>$49.99</td>
-    </tr>
-    <tr>
-    <th>Primer año</th>
-    <td>$19.99</td>
-    </tr>
-    <tr>
-    <th>Segundo año</th>
-    <td>$9.99</td>
-    <td>$29.99</td>
-    </tr>
+        <caption>tabla simple</caption>
+        <tr>
+            <td colspan="2">celda1</td>
+        <tr>
+            <td>celda2</td>
+        </tr>
+        <td>celda3</td>
+        <td>celda4</td>
+        <td>celda5</td>
+        <td>&nbsp;</td>
+        <th>ejemplo</th>
+        </tr>
+        <tr>
+            <th>otro ejemplo</th>
+            <td>celda9</td>
+            <th>celda10</th>
+        </tr>
+        <tr>
+            <th>
+                celda11
+            </th>
+        </tr>
+
+    </table>
+    <table border="1">
+        <caption>Tabla con celdas unidas
+            mediante rowspan</caption>
+        <tr>
+            <th>&nbsp;</th> <!--Celda vacía-->
+
+            <th>Básico</th>
+            <th>Completo</th>
+        </tr>
+        <tr>
+            <th>Instalación</th>
+            <td rowspan="3">Gratis!</td>
+            <td>$49.99</td>
+        </tr>
+        <tr>
+            <th>Primer año</th>
+            <td>$19.99</td>
+        </tr>
+        <tr>
+            <th>Segundo año</th>
+            <td>$9.99</td>
+            <td>$29.99</td>
+        </tr>
     </table>
     <h3>mas ejemplos de tabla</h3>
     <table border="2">
@@ -198,8 +203,8 @@ rem ducimus.
             <td>6'500.000</td>
         </tr>
     </table>
-<br>
-<br>
+    <br>
+    <br>
     <table border="2">
         <caption><b>Tabla del Clima</b></caption>
         <tr>
@@ -225,46 +230,128 @@ rem ducimus.
     <h1 aria-current="page">Images and videos</h1>
     <figure>
         <img src="imagenes/imgPrueba.png" alt="Image not found" title="Foto">
-        <figcaption>Description</figcaption>
+        <figcaption>Description</figcaption><br>
 
-        <video src="imagenes/videoPrueba.mp4" id="video" width="840px" controls loop >
+        <video src="imagenes/videoPrueba.mp4" id="video" width="450px" alt="Video no encontrado." controls loop>
         </video>
         <track label="Español" kind="subtitles" srclang="es" src="">
 
     </figure>
     <br>
 
-<hr>
-<br>
-<h1>Forms</h1>
-<form action="http://www.curso/" method="get" name="Formulario" autocomplete="off">
-    <fieldset>
-    Nombre: <input type="text" name="Nombre:" id="nombre" value="William"><br><br>
-    Email: <input type="email" name="email" id=""> <br><br>
-    Buscar: <input type="search" name="buscar" id=""><br><br>
-    URL: <input type="url" name="url" id="url"><br><br>
-    Edad: <input type="text" type="number" name="numero" id="numero" size="50" min="18" max="120" step="5" 
-    placeholder="Introduce la Edad" ><br><br>
-    Rango: <input type="range" name="rango" id="rango" min="0" max="100" step="5"> <br><br>
-    Fecha: <input type="date" name="fecha" id="fecha"><br><br>
-    Hora: <input type="time" name="hora" id="hora" ><br> <br>
-    Codigo Post: <input pattern="(0-9){5}" placeholder="Max. 5 Digitos"> <br><br>
-    <input type="submit" value="Enviar"><br>
-</fieldset>
-</form><br> <br>
+    <hr>
+    <br>
+    <h1>Forms</h1>
+    <form action="http://www.curso/" method="get" name="Formulario" autocomplete="off">
+        <fieldset>
+            Nombre: <input type="text" name="Nombre:" id="nombre" value="William"><br><br>
+            Email: <input type="email" name="email" id=""> <br><br>
+            Buscar: <input type="search" name="buscar" id=""><br><br>
+            URL: <input type="url" name="url" id="url"><br><br>
+            Edad: <input type="text" type="number" name="numero" id="numero" size="50" min="18" max="120" step="5"
+                placeholder="Introduce la Edad"><br><br>
+            Rango: <input type="range" name="rango" id="rango" min="0" max="100" step="5"> <br><br>
+            Fecha: <input type="date" name="fecha" id="fecha"><br><br>
+            Hora: <input type="time" name="hora" id="hora"><br> <br>
+            Codigo Post: <input pattern="(0-9){5}" placeholder="Max. 5 Digitos"> <br><br>
+            <input type="submit" value="Enviar"><br>
+        </fieldset>
+    </form><br> <br>
 
-<form action="http://www.curso/" method="post">
-    <fieldset>
-        <legend>Formulario para Comentar</legend>
-        <label for="nombre">Digite Su Nombre:</label>
-        <input type="text" name="nombre" id="nombre" autocomplete="off"><br><br>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" size="40"><br><br>
-        <label for="comentarios">Comentarios</label><br>
-        <textarea name="comentarios" id="comentarios" rows="5" cols="60"></textarea><br><br>
-        <input type="submit" value="Enviar"><br>
-    </fieldset>
-</form>
+    <form action="http://www.curso/" method="post" name="form" autocomplete="off">
+        <fieldset>
+
+            <legend id="miestilo">Formulario para Comentar</legend>
+            <label for="nombre">Digite Su Nombre:</label>
+            <input type="text" name="nombre" id="nombre" autocomplete="off"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" size="40"><br><br>
+            <label for="comentarios">Comentarios</label><br>
+            <textarea name="comentarios" id="comentarios" rows="5" cols="60"></textarea><br><br>
+            <input type="submit" value="Enviar"><br>
+        </fieldset>
+    </form>
+    <br>
+    <br><br>
+
+
+    <form action="http://www.curso/?" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Formulario tipo lista</legend>
+            <datalist id="information" aria-autocomplete="none">
+                <option value="12345" label="Telephone"></option>
+                <option value="56789" label="Telephone1"></option>
+                <option value="987654" label="Telephone2"></option>
+            </datalist>
+            Telefono:<input type="tel" name="Telephone" id="Telephone" list="information"><br>
+            <label for="nombre">Ingrese su nombre: </label>
+            <input type="text" name="Nombre" size="20" id="nombre">
+            <input type="submit" value="Enviar" id="Button">
+
+        </fieldset>
+    </form>
+    <h1>Ejemplo Completo</h1><br>
+    <form action="ttp://www.curso/" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Formulario de Comentarios</legend>
+            <datalist id="list" aria-autocomplete="none" aria-setsize="30">
+                <option value="excelente" label="Te gustó Mucho"></option>
+                <option value="Bueno" label="Te gustó"></option>
+                <option value="Regular" label="No Relevante"></option>
+                <option value="Malo" label="No te gustó"></option>
+            </datalist>
+            Escoge la que mas te gusta: <input type="text" name="List_Ilike" id="list" list="list"><br>
+            Nombre: <input type="text" size="20" name="nombre" id="nombre"><br>
+            Edad: <input type="number" size="20" id="edad"><br>
+            Profesion: <select name="profesion" id="lista" size="1"><br><br>
+                <option value="Software">Software</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Soporte">Soporte</option>
+            </select><br><br>
+            Adjuntar archivo: <input type="file" name="adjunto" id="adjunto"> <br><br>
+            <label for="comentarios" id="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" id="comentarios" aria-setsize="80" cols="60" rows="5"></textarea><br>
+            <input type="submit" id="Button" value="Enviar"> <br>
+        </fieldset>
+    </form><br>
+    <hr>
+    <br>
+    <form action="" method="get">
+        Puestos de trabajo <br />
+        <input type="checkbox" name="P_directivo" id="directivo" value="directivo">Directivo <br>
+        <input type="checkbox" name="P_tecnico" id="tecnico" value="tecnico" checked="checked">Tecnico <br>
+        <input type="checkbox" name="P_empleado" id="empleado" value="empleado">Empleado <br>
+    </form><br>
+
+    <form action="" method="get">
+        <caption>Sexo</caption><br>
+        <input type="radio" name="sexo" value="hombre" id="hombre">Hombre <br>
+        <input type="radio" name="sexo" id="mujer" value="mujer" id="mujer">Mujer <br>
+        <input type="reset" size="5px" name="reset" id="borrar" value="Borrar datos">
+    </form><br><br>
+    <hr><br>
+    <br>
+    <h1>Iframe</h1>
+        <caption>Iframe de youTube</caption><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CD-E-LDc384?si=-Podu64Mx_27cRer"
+        title="YouTube video player" frameborder="0" alt="Video Borrado o No encontrado"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen name="video.youtube"></iframe>
+
+        <div class="container"> <!-- Flex
+            container -->
+            <div class="item item-1">1</div> <!--
+            Flex items -->
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+            <div class="item item-6">6</div>
+            <div class="item item-7">7</div>
+            <div class="item item-8">8</div>
+            <div class="item item-9">9</div>
+            </div>
+            
 </body>
 
 </html>
