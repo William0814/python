@@ -1,39 +1,44 @@
-p{color:royalblue;}
-pre{color: blueviolet;height: auto;}
+p {
+  color: royalblue;
+}
+pre {
+  color: blueviolet;
+  height: auto;
+}
 
-#miestilo{color: chartreuse;}
-th[name="form"]{
-    color: blueviolet;
-
+#miestilo {
+  color: chartreuse;
 }
-h1{
-    font-size: 50px;
-    color: blueviolet;
+th[name="form"] {
+  color: blueviolet;
 }
-p{
-    font-size: 25px;
-    line-height: auto;
+h1 {
+  font-size: 50px;
+  color: blueviolet;
 }
-iframe[name="video.youtube"]{
-    color: brown;
-    font-size: 50px;
-    line-height: 25px;
-    height: 200px;
-    border: 30px; color: red;
-    margin: auto;
-    margin-left: 300px;
-    margin-right: 100px;
-
+p {
+  font-size: 25px;
+  line-height: auto;
 }
-.container{
-    display: flex;
-    background: steelblue;
-    width: 400px;
-    height: 400px;
-    place-content: space-evenly;
-    
+iframe[name="video.youtube"] {
+  color: brown;
+  font-size: 50px;
+  line-height: 25px;
+  height: 200px;
+  border: 30px;
+  color: red;
+  margin: auto;
+  margin-left: 300px;
+  margin-right: 100px;
 }
-.item{
-    background: #777;
-    flex: 1 3 35%;
+.container {
+  display: flex;
+  background: steelblue;
+  width: 400px;
+  height: 400px;
+  place-content: space-evenly;
+}
+.item {
+  background: #777;
+  flex: 1 3 35%;
 }
