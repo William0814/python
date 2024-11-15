@@ -167,3 +167,217 @@ if intento<=2:
   solucion = math.sqrt(num)
   print("La raiz cuadrada de "+str(num)+ " es: "+str(solucion))'''
 
+
+#Listas
+
+'''milista=["angel",43,55546987]
+milista2= list("python")
+print(milista2)
+
+# TUPLAS
+"""Una tupla es una colección ordenada e
+inmutable.
+En Python, las tuplas se escriben entre
+paréntesis.
+"""
+mitupla=("manzana","banana","cereza")
+print(mitupla)
+
+mitupla2 = tuple(("manzana","banana","cereza"))
+print(mitupla2)
+
+miTupla3 = ("manzana", "banana", "cereza",
+"naranja", "kiwi", "melon", "mango")
+print(miTupla3[2:5])'''
+
+# Convierta la tupla en una lista para poder cambiarla:
+'''miTupla = ("manzana", "banana", "cereza")
+miLista = list(miTupla)
+miLista[1] = "kiwi"
+miTupla = tuple(miLista)
+
+print(miTupla)'''
+
+miTupla1 = ("manzana", "banana", "cereza")
+for x in miTupla1:
+ print(x)
+
+ # Comprobar si existe un elemento
+# Compruebe si "manzana" está presente en la tupla:
+miTupla2 = ("manzana", "banana", "cereza")
+if "manzana" in miTupla2:
+    print("Sí, manzana está en la tupla.")
+
+
+miTupla = ("manzana", "banana", "cereza",12)
+print(len(miTupla))
+
+miTupla = ("manzana", "banana", "cereza"
+, "manzana")
+print(miTupla.count("manzana"))
+
+# DICCIONARIOS
+"""Los diccionarios, también llamados
+matrices asociativas, deben su nombre a
+que son
+colecciones que relacionan una clave y un
+valor.
+Un diccionario es una colección
+desordenada, modificable e indexada.
+En Python, los diccionarios se escriben
+entre llaves y tienen claves y valores.
+"""
+
+midiccionario = {"brand":"ford","model":"mustag","year":1965}
+print(midiccionario)
+
+# Usar una tupla dentro de un diccionario:
+miDiccionario3={"nombre":"Jordan",
+"Equipo":"Bulls", "Anillos":[1991, 1992,
+1993, 1996, 1997, 1998]}
+print(miDiccionario3["Anillos"])
+
+# Quitar valores de un diccionario
+peliculas = {"Love Actually": "Richard Curtis",
+"Kill Bill": "Tarantino",
+"Amélie": "Jean-Pierre Jeunet"}
+peliculas.pop("Love Actually")
+print(peliculas)
+
+# Crear un diccionario a partir de dos listas:
+lista_claves=["nombre", "edad"]
+lista_valores=["Angel", 43]
+diccionario = dict(zip(lista_claves ,
+lista_valores))
+print(diccionario)
+
+# SETs, conjuntos
+"""
+Un conjunto es una colección de elementos
+únicos que no está ordenada ni indexada,
+por lo que no puede estar seguro de en
+qué orden aparecerán los elementos.
+En Python, los conjuntos se escriben
+entre llaves. Una vez que se crea un conjunto, no puede
+cambiar sus elementos, pero puede agregar
+nuevos elementos.
+"""
+
+# Declaración:
+mi_conjunto = {"Angel", "Sara", "Pilar"}
+mi_conjunto2 = {"Angel", "Manolo",
+"Juan"}
+# Otra forma de declararlo
+mi_conjunto3 = set(("Angel", "Sara",
+"Pilar"))
+print(mi_conjunto3)
+
+mi_conjunto.add("william")
+print(mi_conjunto)
+mi_conjunto.update({"isa","mime"})
+print(mi_conjunto)
+
+# FUNCIONES 
+def my_funcion():
+   print("ejecucion de la funcion")
+
+my_funcion()
+
+def suma():
+   num=2
+   num2=5
+   print("suma= ",num+num2)
+suma()
+def duplica (num):
+   x= num*3
+   return x
+
+print(duplica(4))
+
+#También podríamos pasar varios valores que retornar a return.
+def f(x, y):
+  return x * 2, y * 2
+a, b = f(1, 2)
+""" Sin embargo, esto no quiere decir que
+las funciones Python puedan de-volver
+varios valores,
+lo que ocurre en realidad es que Python
+crea una tupla al vuelo cuyos elementos
+son los valores a retornar, y esta única
+variable es la que se devuelve."""
+
+# Funciones con argumentos variables
+# Me crea una tupla de nombre "otros"
+def varios(param1, param2, **otros):
+  for i in otros.items():
+    print (i)
+varios(1, 2, tercero =3)
+
+"""
+Crear una función para sumar los valores
+recibidos de tipo numérico,
+utilizando argumentos variables *args
+como parámetro de la función
+y regresar como resultado la suma de
+todos los valores pasados como
+argumentos.
+"""
+
+def suma_valores (*argumentos):
+   resultado= 0
+   for valor in argumentos:
+      resultado+= valor
+      return resultado
+print(suma_valores(2,5,4,2,9,8))
+
+def cuenta_regresiva(numero):
+  numero -= 1
+  if numero >= 0:
+   print (numero)
+   cuenta_regresiva(numero)
+  else:
+    print ("Boooooooom!")
+    print ("Fin de la función"),
+  numero
+cuenta_regresiva(6)
+
+"""
+Ejercicio: Calculadora de Impuestos
+Crear una función para calcular el total
+de un pago incluyendo un impuesto
+aplicado.
+# Formula: pago_total = pago_sin_impuesto
++ pago_sin_impuesto * (impuesto/100)
+"""
+
+def calcular_impuesto(pago_sin_impuesto,impuesto):
+   pagoTotal = pago_sin_impuesto*(impuesto/100)
+   return pagoTotal
+#vamos a pedir los datos para realizar el calculo
+pago_sin_impuesto = float(input("pago sin puesto: "))
+impuesto = float(input("Impuesto: "))
+pago_con_impuesto = calcular_impuesto(pago_sin_impuesto, impuesto)
+print(f"pago con impuesto:{pago_con_impuesto}")
+
+'''Ejercicio: Convertidor de Temperatura
+Realizar dos funciones para convertir de
+grados celsius a fahrenheit y viceversa.'''
+
+
+# Funcion que convierte de celsius a fahrenheit
+def celcius_grados (celcius):
+   return celcius * 9 / 5 +32
+
+#funcion de farenheit a celcius
+def farenheit_grados (farenheit):
+   return (farenheit - 32)* 5 / 9
+
+#realizamos la convercion de celcius a farenheit.
+celcius = float(input("Digite grados celcius: "))
+resultado_celcius = celcius_grados(celcius)
+print(f"{celcius} C a F: {resultado_celcius:.2f}")
+
+#realizamos la convercion de farenheit a celcius
+farenheit = float(input("Digite grados farenheit: "))
+resultado_farenheit = farenheit_grados(farenheit)
+print(f"{farenheit} F a C: {resultado_farenheit:0.2f}")
